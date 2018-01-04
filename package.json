@@ -1,0 +1,22 @@
+{
+  "name": "pdsphasergame",
+  "version": "1.0.0",
+  "description": "PDSPhaserGame",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w91379137/PDSPhaserGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w91379137/PDSPhaserGame/issues"
+  },
+  "homepage": "https://github.com/w91379137/PDSPhaserGame#readme",
+  "dependencies": {
+    "phaser-ce": "^2.9.4"
+  }
+}
