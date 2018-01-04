@@ -1,11 +1,17 @@
 
 
+// var Phaser = require('phaser');
+
 var world_width = 640;
 var world_height = 640;
 
-var game = new Phaser.Game(world_width, world_height, Phaser.AUTO, null, {
-    preload: preload, create: create, update: update
-});
+var game = new Phaser.Game(
+    world_width, 
+    world_height, 
+    Phaser.AUTO, 
+    "placeholder", 
+    {preload: preload, create: create, update: update}
+);
 
 var ball;
 
@@ -25,7 +31,7 @@ function preload() {
 
 function create() {
 
-    ball = game.add.sprite(20, 20, 'ball');
+    ball = game.add.sprite(0, 60, 'ball');
     ball.physicsBodyType = Phaser.Physics.ARCADE;
     
     game.physics.enable(ball); //必須要先設定才能有以下屬性
