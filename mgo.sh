@@ -1,7 +1,18 @@
 echo 'PhaserGameSample install'
 
-sourceDir=$(PWD)
-cd ../../www/assets
+if [ ! -d "$PWD/node_modules" ]; then
+    echo '執行 npm install'
+    exit
+fi
+
+sourceDir=$PWD
+cd ../..
+
+if [ ! -d "$PWD/www/assets" ]; then
+    echo '執行 ionic serve >> 建立 project/www/assets'
+    exit
+fi
+cd www/assets
 
 echo 'mkdir PhaserGameSample'
 mkdir -p 'PhaserGameSample'
